@@ -48,4 +48,10 @@ public class Kata {
     public boolean getIsOn() {
         return isOn;
     }
+
+    public boolean isEven(int number) {
+        boolean integer = number % 2 == 0;
+        return integer;
+    }
 }
+

@@ -1,9 +1,11 @@
 package tddClass.kata;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+//import static org.junit.jupiter.api.AssertTrue.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 public class KataTest {
     private int bit;
@@ -71,6 +73,20 @@ public class KataTest {
         on.turnIsOn();
         assertEquals(false, on.getIsOn());
     }
+    @Test
+    public void isEvenTest(){
+        Kata even = new Kata();
+        boolean integer = even.isEven(30);
+        assertTrue(integer);
+    }
+    @Test
+    public void isOddTest(){
+        Kata even = new Kata();
+        boolean integer = even.isEven(31);
+        assertFalse(integer);
+    }
+
+
 
 
 
