@@ -85,6 +85,42 @@ public class KataTest {
         boolean integer = even.isEven(31);
         assertFalse(integer);
     }
+    @Test
+    public void isBiggestTest(){
+        Kata biggest = new Kata();
+        int biggestNumber = biggest.isTheLargestNumber(40,16,37,10,22);
+        assertEquals(40, biggestNumber);
+    }
+    @Test
+    public void isSmallestTest(){
+        Kata smallest = new Kata();
+        int smallestNumber = smallest.isTheSmallestNumber(17,13,16, 8);
+        assertEquals(8, smallestNumber);
+    }
+    @Test
+    public void isBiggestNumberTest(){
+        Kata biggest = new Kata();
+        int biggestInteger = biggest.isTheLargestInteger(12,14,16,10,7);
+        assertEquals(16, biggestInteger);
+    }
+    @Test
+    public void palindromeTest(){
+        Kata palindrome = new Kata();
+        boolean number = palindrome.isPalindrome(123321);
+        assertEquals(true,number);
+    }
+    @Test
+    public  void factorTest(){
+        Kata numberOfFactor = new Kata();
+        int count = numberOfFactor.isFactor(100);
+        assertEquals(9, count);
+    }
+    @Test
+    public void primeNumberTest(){
+        Kata numberPrime = new Kata();
+        boolean integer = numberPrime.isPrimeNumber(29);
+        assertEquals(true,integer);
+    }
 
 
 
