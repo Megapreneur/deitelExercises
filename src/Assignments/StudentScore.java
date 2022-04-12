@@ -2,20 +2,18 @@ package Assignments;
 
 import java.util.Scanner;
 
-public class TheTwelveDAydOfChristmasSong {
+public class StudentScore {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a number from 1 - 12: ");
+        System.out.print("Enter a student score: ");
         int studentGrade = input.nextInt();
-//
-//        switch(day){
-//            case 1
-//        }
+
         if(studentGrade >= 90){
             System.out.println("A");
         }
         else {
             if(studentGrade >= 80){
+
                 System.out.println("B");
             }
             else{

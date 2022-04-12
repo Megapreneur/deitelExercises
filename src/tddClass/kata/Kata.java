@@ -4,6 +4,14 @@ public class Kata {
 
     private boolean isOn;
 
+//    public static int findMaximum(int[] scores) {
+//        int maximum = Integer.MAX_VALUE;
+//        if(int i = 0; i < scores.length; i++){
+//            if(scores[i] > maximum){maximum = scores[i];}
+//        }
+//        return maximum;
+//    }
+
     public int add(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
     }
