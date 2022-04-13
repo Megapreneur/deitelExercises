@@ -11,6 +11,11 @@ public class IntegersDivisibleBy3Test {
         IntegersDivisibleBy3 number = new IntegersDivisibleBy3();
         number.collectNumber(30);
         assertEquals(165, number.getResult());
-
+    }
+    @Test
+    public void moreNumberTest(){
+        IntegersDivisibleBy3 number = new IntegersDivisibleBy3();
+        number.collectNumber(100);
+        assertEquals(1683, number.getResult());
     }
 }
