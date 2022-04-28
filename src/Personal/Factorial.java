@@ -8,7 +8,7 @@ public class Factorial {
         System.out.println("Enter a number: ");
         int number = input.nextInt();
 
-        int product = 1, i = 1;
+        long product = 1, i = 2;
 
         while(i <= number){
              product *= i;

@@ -1,4 +1,4 @@
-package AssignmentTest;
+package Assignments;
 
 public class MultipleNumber {
     boolean result;

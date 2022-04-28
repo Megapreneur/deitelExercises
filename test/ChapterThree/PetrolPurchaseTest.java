@@ -9,7 +9,7 @@ public class PetrolPurchaseTest {
     PetrolPurchase benz;
     @BeforeEach
     public void beginWith(){
-        benz = new PetrolPurchase("Lagos", "diesel", 100, 50000);
+        benz = new PetrolPurchase("", "", 0, 0);
     }
     @Test
     public void carTest(){

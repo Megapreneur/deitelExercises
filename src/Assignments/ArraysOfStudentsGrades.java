@@ -1,6 +1,5 @@
 package Assignments;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArraysOfStudentsGrades {
@@ -28,6 +27,25 @@ public class ArraysOfStudentsGrades {
 
             }
             System.out.println();
+        }
+    }
+
+    public static class StudentGrade {
+        public int numberOfStudent;
+        public int numberOfSubject;
+        public void setNumberOfStudent(int numberOfStudent) {
+            this.numberOfStudent = numberOfStudent;
+        }
+        public int getNumberOfStudent() {
+            return numberOfStudent;
+        }
+        public void setNumberOfSubject(int numberOfSubject) {
+            this.numberOfSubject = numberOfSubject;
+        }
+        public int getNumberOfSubject() {
+            return numberOfSubject;
+        }
+        public void setStudentName(String... studentName) {
         }
     }
 }

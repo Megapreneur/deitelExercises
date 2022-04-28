@@ -1,5 +1,6 @@
 package AssignmentTest;
 
+import Assignments.MultipleNumber;
 import org.junit.jupiter.api.Test;
 
 import static org.testng.AssertJUnit.*;
