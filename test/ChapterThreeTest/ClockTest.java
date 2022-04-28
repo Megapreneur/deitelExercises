@@ -1,5 +1,6 @@
-package ChapterThree;
+package ChapterThreeTest;
 
+import ChapterThree.Clock;
 import org.junit.jupiter.api.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
