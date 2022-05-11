@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class SevenSegment {
      String[][] seven = new String[5][4];
-
     public  void setA(){
             for (int i = 0; i <= 0; i++){
                 for(int j = 0; j <= 3; j++){
@@ -54,12 +53,15 @@ public class SevenSegment {
             }
         }
     }
-    public void setScreen(String input){
+    public void setScreen(){
         for(int i = 0; i <= 4;i++){
             for(int j = 0; j <= 3; j++){
-                seven[i][j] = " ";
+                seven[i][j] = "  ";
             }
         }
+    }
+    public void settingDisplay(String input){
+        setScreen();
         if(input.charAt(7) == '1'){
             if(input.charAt(0) == '1'){setA();}
             if(input.charAt(1) == '1'){setB();}
@@ -69,7 +71,6 @@ public class SevenSegment {
             if(input.charAt(5) == '1'){setF();}
             if(input.charAt(6) == '1'){setG();}
         }
-
     }
     public void display(){
         for(int i = 0; i <= 4; i++){
@@ -78,6 +79,5 @@ public class SevenSegment {
             }
            System.out.println();
         }
-
     }
 }

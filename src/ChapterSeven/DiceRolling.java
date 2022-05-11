@@ -7,7 +7,7 @@ public class DiceRolling {
     public static void main(String[] args) {
         SecureRandom random = new SecureRandom();
         int [] array = new int[11];
-        for (int i = 1; i <= 3600 ; i++) {
+        for (int i = 1; i <= 600_000 ; i++) {
             int die1 = random.nextInt(6) + 1;
             int die2 = random.nextInt(6) + 1;
 
@@ -26,6 +26,6 @@ public class DiceRolling {
                 case 12 -> array[10]++;
             }
         }
-//        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
     }
 }

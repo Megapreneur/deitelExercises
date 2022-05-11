@@ -6,6 +6,7 @@ public class MultipleArray {
 
 
     public static void main(String[] args) {
+
         bestScoresArray();
     }
     public  int getMyArray(int[] array) {
