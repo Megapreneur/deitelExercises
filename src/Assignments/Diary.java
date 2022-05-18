@@ -15,25 +15,6 @@ public class Diary {
         this.password = password;
         entries = new ArrayList<>();
     }
-    public boolean unlockDiary(String password) {
-//        if (this.password.equals(password)){
-        if(this.password.equals(password)){
-            createEntry(Title, Date, Body);
-            getNumberOfEntry();
-            findEntryByDate(Date);
-            findEntryByTitle(Title);
-            deleteEntryByTitle(Title);
-            deleteEntryByDate(Date);
-            return true;
-        }
-        else {
-            incorrectPassword();
-        }
-        return false;
-    }
-    private void incorrectPassword() {
-        System.out.println("Incorrect password");
-    }
     public void createEntry(String Title, String Date, String Body) {
         Entry entry = new Entry(Title,Date,Body);
         entries.add(entry);
