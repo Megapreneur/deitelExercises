@@ -1,3 +1,5 @@
+package tddClass.kata;
+
 import static java.lang.Math.PI;
 
 public enum Region {

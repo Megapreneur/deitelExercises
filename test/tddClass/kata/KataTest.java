@@ -121,11 +121,12 @@ public class KataTest {
         boolean integer = numberPrime.isPrimeNumber(29);
         assertEquals(true,integer);
     }
-//    @Test
-//    public void maximumNumberInArrayTest(){
-//        int[] scores = {34, 23, 14, 45, 23};
-//        assertEquals(45, Kata.findMaximum(scores));
-//    }
+    @Test
+    public void classWorkTest(){
+        Kata playPlay = new Kata();
+        playPlay.arrayPrinting();
+        assertEquals(0,playPlay.arrayPrinting());
+    }
 
 
 

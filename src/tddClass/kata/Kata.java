@@ -128,5 +128,16 @@ public class Kata {
 //        }
        return isFactor(number) <= 2;
    }
+
+    public int arrayPrinting() {
+        int sum = 0;
+        int[] arry = new int[20];
+        for (int i = 0; i < arry.length; i++) {
+            sum = arry[i];
+
+        }
+
+        return sum;
+    }
 }
 

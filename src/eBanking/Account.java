@@ -19,16 +19,16 @@ public class Account {
 
     public void deposit(int amount) {
         if(amount > 0)
-        balance = balance + amount;
+            balance = balance + amount;
     }
 
     public int getBalance(String pin) {
-        if(pin.equals(this.pin)) return balance;
+        if(pin.equals(pin)) return balance;
         return 0;
     }
 
     public void withdraw(int amount, String pin) {
-        if(pin.equals(this.pin))
+        if(pin.equals(pin))
             if(balance > amount)
         balance = balance - amount;
     }

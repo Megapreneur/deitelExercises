@@ -83,9 +83,18 @@ class DiaryTest {
         assertEquals(4, myDiary.getNumberOfEntry());
         int when = myDiary.findEntryByDate("4, May, 2022");
         assertEquals(-8, when);
-
-
-
+    }
+    @Test
+    public void deleteAllEntryTest(){
+        Diary myDiary = new Diary("nutmeg", "@2365");
+        myDiary.createEntry("kamasutra", "8, May, 2022", "reaching climax");
+        myDiary.createEntry("Java", "9, May, 2022", "reaching climax");
+        myDiary.createEntry("Python", "5, May, 2022", "reaching climax");
+        myDiary.createEntry("Database", "6, May, 2022", "reaching climax");
+        myDiary.createEntry("Industrial design", "4, May, 2022", "reaching climax");
+        assertEquals(5, myDiary.getNumberOfEntry());
+        myDiary.deleteAllEntry("@2365");
+        assertEquals(0, myDiary.getNumberOfEntry());
     }
 
 }

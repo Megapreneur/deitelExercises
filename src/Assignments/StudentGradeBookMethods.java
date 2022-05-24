@@ -3,11 +3,16 @@ package Assignments;
 import java.util.Scanner;
 
 public class StudentGradeBookMethods {
+    public static void main(String[] args) {
+        welcomeMessage();
+        collectUserInputAndDisplayTable();
+
+    }
 
 
     public static void welcomeMessage() {
         System.out.println("==============================");
-        System.out.println("Welcome to Student's Gradebook");
+        System.out.println("Welcome to Student's Grade book");
         System.out.println("==============================");
     }
 
@@ -73,15 +78,6 @@ public class StudentGradeBookMethods {
             System.out.println();
         }
         System.out.println("==================================================================");
-
-
-
-//    public static void printShape(){
-//        String shape = "=";
-//        System.out.print(shape.repeat(55));
-//        System.out.println();
-//    }
-
 
     }
 }

@@ -15,6 +15,10 @@ public class Diary {
         this.password = password;
         entries = new ArrayList<>();
     }
+    public Diary(){
+        entries = new ArrayList<>();
+
+    }
     public void createEntry(String Title, String Date, String Body) {
         Entry entry = new Entry(Title,Date,Body);
         entries.add(entry);
@@ -45,6 +49,16 @@ public class Diary {
     }
     public void deleteEntryByDate(String Date) {
         entries.remove(findEntryByDate(Date) - 1);
+    }
+    public void deleteAllEntry(String password) {
+        this.password = password;
+        entries.removeAll(entries);
+    }
+    @Override
+    public String toString(){
+
+
+        return "your name is "+ name;
     }
 }
 
