@@ -14,8 +14,8 @@ public class AddingSetValues {
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array2.length; j++) {
                 if(array1[i] == array2[j]){
-                    int tot = array1[i] + array1[i];
-                    sum+=tot;
+                    int total = array1[i] + array1[i];
+                    sum+=total;
                 }
             }
         }
@@ -23,14 +23,23 @@ public class AddingSetValues {
     }
     public static  void sumOfDistinctElements(int[] array1, int[] array2){
         int sum = 0;
+        int total1 = 0;
+        int total2 = 0;
+        int total = 0;
+
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array2.length; j++) {
                 if(array1[i] != array2[j]) {
-                    int total = array1[i] + array2[j];
-                    sum += total;
+                    total1 = array1[i] + array2[j];
+//                    sum += total;
                 }
+                if (array2[j] != array1[i] ){
+                    total2 = array1[i] + array2[j];
+                }
+
             }
         }
-        System.out.println(sum);
+        total = total1 + total2;
+        System.out.println(total);
     }
 }

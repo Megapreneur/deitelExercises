@@ -29,4 +29,10 @@ public class Car {
     public double getDiscount() {
         return discount;
     }
+    public String toString(){
+
+        return "The car model is " + model + "\n" +
+                "It was produced in the year " + year + "\n" +
+                "The price is " + amount + ".";
+    }
 }

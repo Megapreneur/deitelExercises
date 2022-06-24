@@ -1,11 +1,11 @@
 package Personal;
 
 public class Ademola {
-    private Phone phone;
-    private Laptop pc;
-    private Bag bag;
-    private Shoe shoes;
-    private Cloth clothes;
+    private final Phone phone;
+    private final Laptop pc;
+    private final Bag bag;
+    private final Shoe shoes;
+    private final Cloth clothes;
 
     public Phone getPhone() {
         return phone;

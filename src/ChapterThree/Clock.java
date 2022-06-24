@@ -32,5 +32,8 @@ public class Clock {
     public String getDisplayTime() {
         return getHours()+":"+getMinutes()+":"+ getSeconds();
     }
+    public String toString(){
+        return "The time is " + hour + ":" + minute + ":" + second;
+    }
 }
 

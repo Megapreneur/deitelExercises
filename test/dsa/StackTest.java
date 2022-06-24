@@ -32,7 +32,7 @@ public class StackTest {
         assertTrue(stack.isEmpty());
     }
     @Test
-    public void pushXandY_popY_stackShouldNotBeEmptyTest(){
+    public void pushXAndY_popY_stackShouldNotBeEmptyTest(){
         stack.push(14);
         stack.push(3);
         stack.pop();
