@@ -6,9 +6,10 @@ import java.util.Scanner;
 
 public class RomanToInteger {
     public static void main(String[] args) {
+        System.out.println("Enter the roman numeral you will like to convert to integer: ");
 
         Scanner input = new Scanner(System.in);
-        String userInput = input.next();
+        String userInput = input.next().toUpperCase();
         System.out.println(romanToInteger(userInput));
     }
     public static int romanToInteger(String s){
@@ -28,7 +29,6 @@ public class RomanToInteger {
             }else{
                 result  += map.get(s.charAt(i));
             }
-
         }
         return result;
     }
