@@ -18,8 +18,8 @@ public class AnimalMain {
         }
 //        Animal rabbit = new Rabbit();
 //        rabbit.move();
-//        Chicken rabbit2 = new Chicken();
-//        rabbit2.run();
+        Chicken rabbit2 = new Chicken();
+        rabbit2.run();
 
 
 
