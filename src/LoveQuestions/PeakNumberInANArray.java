@@ -3,10 +3,8 @@ package LoveQuestions;
 public class PeakNumberInANArray {
     private static int peakValue;
     public static void main(String[] args) {
-        int[] nums = {10, 8 ,6, 5, 3, 2};
+        int[] nums = {10, 8 ,6, 5, 12, 2};
         System.out.println(findPeak(nums));
-
-
     }
     public static int findPeak(int [] arr){
         for (int i = 1; i < arr.length; i++) {

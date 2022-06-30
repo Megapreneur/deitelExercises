@@ -10,27 +10,31 @@
 //     }
 // }
 
-var person = {
-    name: "Ademola Megbabi",
-    age: 21,
-    hasDriverLicence: true,
-    dateOfBirth: "01/01/2020"
-};
+// var person = {
+//     name: "Ademola Megbabi",
+//     age: 21,
+//     hasDriverLicence: true,
+//     dateOfBirth: "01/01/2020"
+// };
+//
+// console.log(person)
+// console.log(person.name)
+//
+// console.log(Object.values(person))
+//
+//
+// let names =  ["alex", "sam", "ade"]
+// console.log(names.length)
+// for(let n of names){
+//     console.log(n)
+// }
+//
+// names.forEach(function (n, index){
+//     console.log(index + " - " + n);})
 
-console.log(person)
-console.log(person.name)
-
-console.log(Object.values(person))
-
-
-let names =  ["alex", "sam", "ade"]
-console.log(names.length)
-for(let n of names){
-    console.log(n)
+function addNumbers(a, b){
+    return a + b;
 }
 
-names.forEach(function (n, index){
-    console.log(index + " - " + n);
-}
-
-)
+var result = addNumbers(9, 16  )
+console.log(result)
