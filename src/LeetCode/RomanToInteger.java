@@ -12,7 +12,7 @@ public class RomanToInteger {
         String userInput = input.next().toUpperCase();
         System.out.println(romanToInteger(userInput));
     }
-    public static int romanToInteger(String s){
+    public static int romanToInteger(String roman){
         Map<Character, Integer> map = new HashMap<>();
         map.put('I', 1);
         map.put('V', 5);
@@ -23,11 +23,11 @@ public class RomanToInteger {
         map.put('M', 1000);
 
         int result = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (i > 0 && map.get(s.charAt(i)) > map.get(s.charAt(i - 1))){
-                result += map.get(s.charAt(i)) - 2 * map.get(s.charAt(i - 1));
+        for (int i = 0; i < roman.length(); i++) {
+            if (i > 0 && map.get(roman.charAt(i)) > map.get(roman.charAt(i - 1))){
+                result += map.get(roman.charAt(i)) - 2 * map.get(roman.charAt(i - 1));
             }else{
-                result  += map.get(s.charAt(i));
+                result  += map.get(roman.charAt(i));
             }
         }
         return result;
