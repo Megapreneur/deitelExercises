@@ -1,6 +1,7 @@
 package PersonalTest2;
 
 import java.security.SecureRandom;
+import java.util.Arrays;
 
 public class GeneratingAccountNumber {
     public static void main(String[] args) {
@@ -13,10 +14,8 @@ public class GeneratingAccountNumber {
 
         for (int i = 0; i < len; i++) {
             accountNumber[i] = number.charAt(random.nextInt(number.length()));
-
         }
         System.out.println("Generated password is:" + new String(accountNumber));
-
-
+//        System.out.println("Generated password is:" + Arrays.toString(accountNumber));
     }
 }

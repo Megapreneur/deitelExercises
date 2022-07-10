@@ -18,7 +18,5 @@ public class PasswordGeneration {
             passwords[i] = combined.charAt(rand.nextInt(combined.length()));
         }
         System.out.println("Generated password is:" + new String(passwords));
-
-
     }
 }
