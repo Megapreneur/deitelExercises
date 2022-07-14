@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class MedianOfTwoSortedArrays {
     public static void main(String[] args) {
         int[] arr = {1,3,5,7};
-        int[] arr1 = {2,4,6,8,9};
+        int[] arr1 = {2,4,6,8, 9};
 
         int a = arr.length;
         int b = arr1.length;
@@ -19,9 +19,17 @@ public class MedianOfTwoSortedArrays {
         System.arraycopy(arr1, 0, newArray, a, b);
         Arrays.sort(newArray);
 
-        for (int i = 0; i < newArray.length; i++) {
+        double m = 0;
 
-
+        if(c % 2 != 0){
+            m = (double) newArray[c / 2];
         }
+        else {
+            m = (double) (newArray[(c - 1) / 2] + newArray[c / 2]) / 2.0;
+        }
+
+
+        System.out.println(Arrays.toString(newArray));
+        System.out.println(m);
     }
 }
