@@ -9,7 +9,7 @@ public class LamdbaExercise {
         int factorial = IntStream.rangeClosed(1, 99).reduce((acct, el) ->  acct * el).getAsInt();
         System.out.println(factorial);
 
-//        SecureRandom secureRandom = new SecureRandom();
+//        SecureRandom = new SecureRandom();
 //        secureRandom.ints(10, 1, 7).filter(x -> x % 2 == 0).forEach(System.out::println);
     }
 }
