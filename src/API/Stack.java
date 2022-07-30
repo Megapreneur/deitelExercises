@@ -31,4 +31,9 @@ public class Stack {
         numberOfItem--;
         return myBag[numberOfItem];
     }
+    public void printStack(){
+        for (int i = numberOfItem - 1; i > 0 ; i--) {
+            System.out.println(myBag[i]);
+        }
+    }
 }
