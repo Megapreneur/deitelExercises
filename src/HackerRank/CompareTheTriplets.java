@@ -14,27 +14,34 @@ public class CompareTheTriplets {
         firstPerson.add(16);
         firstPerson.add(8);
         System.out.println(compareTriplet(firstPerson, secondPerson));
-
-
     }
     public static List<Integer> compareTriplet(List<Integer> a, List<Integer> b){
         int counterA = 0;
         int counterB = 0;
-        List<Integer>score = new ArrayList<>();
-        for (int i = 0; i < b.size(); i++) {
-            if (a.get(i) > b.get(i)){
-                counterA += 1;
-            } else if (a.get(i) < b.get(i)) {
-                counterB += 1;
+        List<Integer> score = new ArrayList<>();
+        for (int i = 0; i < a.size(); i++) {
+            for (int j = 0; j < b.size(); j++) {
+                if (a.get(i) > b.get(i)){
+                    counterA++;
+                    score.add(counterA);
+                } else{
+                    counterB++;
+                    score.add(counterB);
+                }
+//                if (a.get(i) > b.get(i)){
+//                    counterA++;
+//                    score.add(counterA);
+//                } else if (a.get(i) < b.get(i)) {
+//                    counterB++;
+//                    score.add(counterB);
+//                }
             }
-
 //            System.out.println(counterA);
 //            System.out.println(counterB);
         }
-        score.add(counterA);
-        score.add(counterB);
+//        score.add(counterA);
+//        score.add(counterB);
 
         return score;
     }
-
 }

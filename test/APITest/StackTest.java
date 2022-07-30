@@ -54,11 +54,11 @@ public class StackTest {
         stack.push("biro");
         stack.push("book");
         stack.push("pencil");
-        stack.push("laptop");
-        stack.push("eraser");
-        stack.push("notepad");
+//        stack.push("laptop");
+//        stack.push("eraser");
+//        stack.push("notepad");
         stack.peek();
-        assertEquals("laptop", stack.peek());
+        assertEquals("pencil", stack.peek());
     }
     @Test
     public void testThatWeCanPushAndPopInTheStack(){
@@ -70,6 +70,10 @@ public class StackTest {
         String element = stack.pop();
         assertEquals("pencil", element);
         assertEquals(3, stack.size());
+        stack.peek();
+        assertEquals("book", stack.peek());
+
+
 
     }
     @Test
