@@ -1,5 +1,7 @@
 package API;
 
+import java.util.EmptyStackException;
+
 public class Stack {
     final String [] myBag = new String[5];
     private int numberOfItem;
@@ -20,6 +22,9 @@ public class Stack {
         return myBag[numberOfItem-1];
     }
     public String pop() {
+        if (isEmpty()){
+            throw new EmptyStackException();
+        }
         numberOfItem--;
         return myBag[numberOfItem];
     }
