@@ -19,6 +19,9 @@ public class Stack {
         return numberOfItem;
     }
     public String peek() {
+        if (isEmpty()){
+            throw new EmptyStackException();
+        }
         return myBag[numberOfItem-1];
     }
     public String pop() {
