@@ -54,9 +54,9 @@ public class StackTest {
         stack.push("biro");
         stack.push("book");
         stack.push("pencil");
-//        stack.push("laptop");
-//        stack.push("eraser");
-//        stack.push("notepad");
+        stack.push("laptop");
+        stack.push("eraser");
+        stack.push("notepad");
         stack.peek();
         assertEquals("pencil", stack.peek());
     }
